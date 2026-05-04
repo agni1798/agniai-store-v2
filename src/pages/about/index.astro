@@ -1,46 +1,75 @@
 ---
+// /about/ — Phase 5 (2026-05-04). Endorsed Sub-Brand pattern.
+// Lead with the parent-brand relationship, then operator credibility, then mission.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
-  title="About Aman &amp; Agni AI Store"
-  description="Agni AI Store is a division of Agni Consulting, a Toronto-based marketing-ops firm. Founded by Aman Gupta. Built for local service businesses across the GTA."
+  title="About &mdash; A service of Agni Consulting | Agni AI Store"
+  description="Agni AI Store is the customer-lifecycle service of Agni Consulting, a B2B marketing-ops practice based in Toronto and serving North America. Built by operators who&rsquo;ve shipped this stack inside Series-A and Series-B SaaS, brought down to where it&rsquo;s genuinely needed."
 >
+  <!-- Hero -->
   <section class="ai-hero">
     <p class="ai-eyebrow">ABOUT</p>
-    <h1>Built in Toronto. By an operator, not an agency.</h1>
+    <h1>By operators, <br>not an agency.</h1>
+    <p class="ai-lead">
+      Agni AI Store is the customer-lifecycle service of <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);">Agni Consulting</a> &mdash; a B2B marketing-operations practice based in Toronto and serving North America. We took the playbook that runs inside venture-backed B2B SaaS companies and rebuilt it for owner-operated service businesses.
+    </p>
   </section>
 
+  <!-- Operator -->
   <section class="ai-section">
     <div class="ai-wrap ai-narrow">
-      <p>
-        I'm <strong>Aman Gupta</strong>. I run <a href="https://shopagni.com" target="_blank" rel="noopener">Agni Consulting</a> — a marketing-ops firm that's spent the last decade inside Series-A and Series-B B2B SaaS companies, wiring HubSpot, Marketo, Salesforce, RevOps, demand gen — the unsexy plumbing that decides whether a company hits its number or doesn't.
+      <p class="ai-eyebrow">The operator</p>
+      <h2>Aman Gupta.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:18px;">
+        I&rsquo;m Aman. I run <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);">Agni Consulting</a> &mdash; a marketing-ops practice that&rsquo;s spent the last decade inside Series-A and Series-B B2B SaaS companies wiring HubSpot, Marketo, Salesforce, RevOps, and demand generation. The unsexy plumbing that decides whether a company hits its number.
       </p>
-      <p>
-        Agni AI Store is the version of that work, built for local service businesses. Vet clinics, chiro and physio practices, HVAC and plumbing operators across the GTA. Same playbook, different vocabulary.
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        Agni AI Store is the version of that work I built for local service businesses. The shape of the problem is identical &mdash; someone is leaking customers, the leak is operational, the owner doesn&rsquo;t have time to fix it &mdash; but the vocabulary, the software, the regulations, and the dollar amounts are different. We use industry-specific terms (recall, reactivation, care plan, agreement attach) because those are the words that match how owner-operators actually run their businesses.
       </p>
-      <p>
-        I started this division after watching a friend who runs an independent vet clinic in North York lose six figures a year to voicemail and lapsed clients — and realizing the AI + automation stack we deploy at $20M ARR SaaS companies costs basically nothing to run for a 3-DVM clinic. The technology has caught up. Most local-services agencies haven't.
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        I started this division after watching a friend who runs an independent vet clinic lose six figures a year to voicemail and lapsed clients &mdash; and realising the playbook I run for SaaS companies would solve almost all of it, with a fraction of the technical lift. The first conversations were free. They still are. The audit is the offer.
       </p>
-      <h2>What I won't pretend to be</h2>
-      <p>
-        I'm not a vet, a chiropractor, or an HVAC tech. I don't know your medicine, your manual therapy, your refrigerant codes. I won't try.
+    </div>
+  </section>
+
+  <!-- The relationship -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">Parent brand</p>
+      <h2>How Agni AI Store relates to Agni Consulting.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);">Agni Consulting</a> is the parent practice. It serves B2B SaaS companies $5M&ndash;$50M ARR with on-demand marketing leadership &mdash; fractional CMO, demand-gen overhauls, marketing-ops audits, RevOps integration. Different audience, same operator, same operational discipline.
       </p>
-      <p>
-        What I do know is the customer lifecycle — the gap between when someone Googles you and when they're sitting in your chair, and every gap between visit 1 and visit 12 where things fall through. I know how to wire that lifecycle so it runs without your front desk having to remember to do anything.
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        Agni AI Store is the productized service-business arm. We take the same operational backbone &mdash; lifecycle ops, automation, AI agents, integration plumbing &mdash; and apply it to vet clinics, chiropractors, dental practices, med-spas, HVAC operators, and the dozens of other owner-operated service businesses that have the same four leaks.
       </p>
-      <h2>What you get from me, specifically</h2>
-      <ul class="ai-checklist">
-        <li>Every implementation in the first 90 days, I lead personally. Not "an account manager."</li>
-        <li>The audit is mine. The proposal is mine. The setup is mine.</li>
-        <li>After 90 days, an Agni operator runs ongoing ops; I stay on quarterly strategy.</li>
-        <li>I'll tell you on the audit call if you should NOT hire us. I send people to direct competitors a few times a quarter.</li>
-      </ul>
-      <h2>Where to find me</h2>
-      <p>
-        Email: <a href="mailto:hello@agniai.store">hello@agniai.store</a><br>
-        Calendar: <a href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">calendly.com/aman-shopagni</a><br>
-        Parent firm: <a href="https://shopagni.com" target="_blank" rel="noopener">shopagni.com</a>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        Two domains, two distinct ICPs, one team, one quality bar. If you&rsquo;re looking for fractional CMO or B2B SaaS marketing-ops work, that&rsquo;s on the <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);">Agni Consulting</a> site. If you&rsquo;re an owner-operator running a service business, you&rsquo;re in the right place here.
       </p>
+    </div>
+  </section>
+
+  <!-- Geography -->
+  <section class="ai-section-tight">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">Where we work</p>
+      <h2>North America today. Globally over time.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        Our team is based in Toronto. We serve clients across Canada and the United States, with engagements in Europe by referral. We invoice in USD by default; Canadian clients can opt into CAD. Twilio numbers are local to your area code regardless of where you are. Data residency, HIPAA BAAs, and PIPEDA-aware practices are configured per-engagement &mdash; details on the <a href="/trust/" style="color:var(--accent);">trust page</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow" style="text-align:center;">
+      <h2>Talk to the operator who&rsquo;ll run your account.</h2>
+      <p class="ai-lead">No SDR, no junior. The 30-minute audit is with me. The implementation team is small, senior, and the same people month after month.</p>
+      <div class="ai-cta-row">
+        <a class="ai-btn" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Book the audit &rarr;</a>
+        <a class="ai-btn-ghost" href="https://shopagni.com" target="_blank" rel="noopener">Visit Agni Consulting</a>
+      </div>
     </div>
   </section>
 </BaseLayout>

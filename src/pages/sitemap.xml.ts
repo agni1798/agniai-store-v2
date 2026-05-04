@@ -4,12 +4,16 @@ const SITE = 'https://agniai.store';
 
 const PATHS: Array<{ path: string; priority: number; changefreq: string }> = [
   { path: '/',                 priority: 1.0,  changefreq: 'weekly'  },
+  { path: '/industries/',      priority: 0.9,  changefreq: 'monthly' },
   { path: '/for-vets/',        priority: 0.95, changefreq: 'monthly' },
   { path: '/for-chiros/',      priority: 0.95, changefreq: 'monthly' },
+  { path: '/for-dental/',      priority: 0.95, changefreq: 'monthly' },
+  { path: '/for-medspa/',      priority: 0.95, changefreq: 'monthly' },
   { path: '/for-hvac/',        priority: 0.95, changefreq: 'monthly' },
-  { path: '/services/',        priority: 0.9,  changefreq: 'monthly' },
+  { path: '/engagements/',     priority: 0.9,  changefreq: 'monthly' },
   { path: '/how-it-works/',    priority: 0.8,  changefreq: 'monthly' },
   { path: '/about/',           priority: 0.7,  changefreq: 'monthly' },
+  { path: '/trust/',           priority: 0.7,  changefreq: 'monthly' },
   { path: '/contact/',         priority: 0.8,  changefreq: 'monthly' },
 ];
 

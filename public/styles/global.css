@@ -86,7 +86,11 @@ p { margin: 0 0 16px; }
   letter-spacing: -0.01em;
 }
 .ai-brand-logo img { width: 32px; height: 32px; }
+.ai-brand-logo svg { width: 28px; height: 28px; }
 .ai-brand-logo:hover { color: var(--tx); }
+.ai-brand-mark { display: flex; flex-direction: column; line-height: 1.05; gap: 1px; }
+.ai-brand-name { font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
+.ai-brand-sub { font-size: 11px; font-weight: 500; color: var(--tx-soft); letter-spacing: 0.02em; }
 .ai-nav-links {
   list-style: none;
   margin: 0;
@@ -474,6 +478,15 @@ p { margin: 0 0 16px; }
 }
 .ai-footer-bottom a { color: var(--tx-dim); }
 .ai-footer-bottom a:hover { color: var(--tx-soft); }
+
+/* ─── FAQ blocks ─── */
+.ai-faq {
+  border-top: 1px solid var(--border);
+  padding: 22px 0;
+}
+.ai-faq:last-child { border-bottom: 1px solid var(--border); }
+.ai-faq h3 { font-size: 17px; margin: 0 0 8px; color: var(--tx); }
+.ai-faq p { margin: 0; line-height: 1.65; }
 
 /* ─── Responsive ─── */
 @media (max-width: 720px) {

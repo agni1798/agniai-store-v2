@@ -1,5 +1,8 @@
 # agniai.store v2 redirects
-# Legacy paths from v1 (single-page Netlify build) that now have proper URLs
-/services           /services/                      301
-/how-it-works       /how-it-works/                  301
-/cart               /services/                      301
+# Phase 5 (2026-05-04): /services/ renamed to /engagements/, audit-first model
+/services                /engagements/                   301
+/services/               /engagements/                   301
+/how-it-works            /how-it-works/                  301
+/cart                    /engagements/                   301
+/pricing                 /engagements/                   301
+/pricing/                /engagements/                   301

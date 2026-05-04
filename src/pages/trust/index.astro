@@ -1,0 +1,133 @@
+---
+// /trust/ — compliance + data residency + vendor list (Phase 5, 2026-05-04)
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Trust &amp; compliance | Agni AI Store"
+  description="SOC 2 Type II in progress. HIPAA BAA available on request. PIPEDA-aware practices. GDPR-aware. Data residency configured per-engagement. Sub-processor list disclosed."
+>
+  <!-- Hero -->
+  <section class="ai-hero">
+    <p class="ai-eyebrow">TRUST &amp; COMPLIANCE</p>
+    <h1>How we handle your data, your patients&rsquo; data, and the rules that apply to both.</h1>
+    <p class="ai-lead">
+      We touch phone calls, SMS, customer records, and review pipelines. The rules vary by jurisdiction and by industry &mdash; so we&rsquo;ve built our practice to match the strictest plausible regime, not the loosest. Below is what we sign, what we&rsquo;re working toward, and who else is in the supply chain.
+    </p>
+  </section>
+
+  <!-- Frameworks -->
+  <section class="ai-section">
+    <div class="ai-wrap">
+      <p class="ai-eyebrow" style="text-align:center;">Frameworks</p>
+      <h2 style="text-align:center;margin-bottom:32px;">What we&rsquo;ve signed, certified, and verified.</h2>
+      <div class="ai-grid-2">
+
+        <div class="ai-card">
+          <h3>SOC 2 Type II &mdash; in progress</h3>
+          <p style="color:var(--tx-soft);">Audit cycle started Q1 2026, expected completion Q4 2026. We&rsquo;re running the controls now &mdash; access reviews, change management, incident response, vendor risk &mdash; and the auditor will issue the report on schedule. Letter of engagement available on request to qualified prospects.</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>HIPAA &mdash; BAA on request</h3>
+          <p style="color:var(--tx-soft);">For chiro, physio, dental, med-spa, optometry, and any engagement where Protected Health Information enters our systems, we sign a Business Associate Agreement before kickoff. Our default infrastructure (Twilio, HighLevel, AWS) supports HIPAA-eligible configurations.</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>PIPEDA &mdash; aware</h3>
+          <p style="color:var(--tx-soft);">For Canadian clients we follow Personal Information Protection and Electronic Documents Act requirements: consent on collection, transparency about cross-border data flow, breach notification, and the right of access. We disclose if a sub-processor is US-based and how that affects your privacy posture.</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>GDPR &mdash; aware</h3>
+          <p style="color:var(--tx-soft);">For European engagements (currently by referral only) we apply GDPR-equivalent practices: lawful basis, data subject rights, processor agreements, and EU data residency where required. Standard Contractual Clauses included in our DPA.</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>CASL / TCPA &mdash; baked in</h3>
+          <p style="color:var(--tx-soft);">Our SMS and email systems enforce Canadian Anti-Spam Legislation and US Telephone Consumer Protection Act consent requirements before any outbound message. Express consent capture, easy unsubscribe, and audit trail are part of the default configuration.</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>Industry advertising rules</h3>
+          <p style="color:var(--tx-soft);">CVO &middot; AVMA &middot; CCO &middot; College of Physiotherapists &middot; APTA &middot; ACA &middot; provincial dental colleges &middot; HRAI &middot; ACCA &middot; PHCC. We know the rules each regulator imposes on review solicitation, before/after photos, testimonials, and incentivization &mdash; and we configure your sequences to respect them.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Data residency -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">Data residency</p>
+      <h2>Where your data lives, by default.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        For US-based clients: data resides in US AWS regions (us-east-1 primary, us-east-2 backup). For Canadian clients with PIPEDA or provincial-health-data requirements: we configure ca-central-1 (Montreal) primary with Canadian-resident backup. For European-referral engagements: eu-west-1 (Ireland) primary. Twilio numbers are always local to your area code regardless of where data is stored.
+      </p>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        Cross-border data flow is disclosed in our Data Processing Addendum, which is part of every Run-It engagement. If your regulator requires data to stay in-country (some Canadian provincial health authorities do), we configure for that on the Pilot.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sub-processors -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">Sub-processors</p>
+      <h2>Who else handles your data.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        We&rsquo;re an operator on top of best-in-class infrastructure. The full sub-processor list, with each vendor&rsquo;s purpose, certifications, and data location, is shared as part of the Data Processing Addendum on engagement. Headline vendors:
+      </p>
+      <ul class="ai-checklist" style="margin-top:14px;">
+        <li><strong>Twilio</strong> &mdash; voice, SMS, call recording. SOC 2 Type II, HIPAA-eligible.</li>
+        <li><strong>HighLevel</strong> &mdash; CRM, automation, AI receptionist primitives. HIPAA-eligible workspace.</li>
+        <li><strong>AWS</strong> &mdash; primary infrastructure. SOC 2, HIPAA-eligible, region-flexible.</li>
+        <li><strong>Cloudflare</strong> &mdash; web edge, security, DDoS, redirect rules. SOC 2 Type II.</li>
+        <li><strong>OpenAI / Anthropic</strong> &mdash; LLM inference under enterprise / API agreements with no-training-on-data clauses.</li>
+        <li><strong>Synthflow / Vapi / Retell</strong> &mdash; voice AI primitives, evaluated per-engagement.</li>
+        <li><strong>n8n</strong> &mdash; workflow orchestration. Self-hosted on AWS where required.</li>
+        <li><strong>Stripe</strong> &mdash; engagement billing only; never touches client customer data.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Incident response -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">Incident response</p>
+      <h2>If something goes wrong.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        We notify you within 24 hours of confirming a security incident affecting your engagement. We have a documented incident response plan with severity classification, containment steps, and forensics capture. For HIPAA-covered engagements we follow the Breach Notification Rule timelines (60 days). Drills run quarterly.
+      </p>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        For security disclosures, email <a href="mailto:security@agniai.store" style="color:var(--accent);">security@agniai.store</a>. We aim to respond within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- Geography -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">Geography &amp; team</p>
+      <h2>Where we are. Where we work.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        Our team is based in Toronto, Canada. We serve clients across Canada and the United States in production today. We take engagements in Europe by referral. We invoice in USD by default; Canadian clients can opt into CAD. Twilio numbers are local to your area code regardless of where the team is.
+      </p>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        Agni AI Store is a service of <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);">Agni Consulting</a>. The legal entity that signs your engagement is Agni Consulting (Ontario, Canada).
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="ai-section-tight">
+    <div class="ai-wrap ai-narrow" style="text-align:center;">
+      <h2>Questions about compliance?</h2>
+      <p class="ai-lead">Email <a href="mailto:hello@agniai.store" style="color:var(--accent);">hello@agniai.store</a> or book the audit and we&rsquo;ll address compliance scoping on the call.</p>
+      <div class="ai-cta-row">
+        <a class="ai-btn" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Book the audit &rarr;</a>
+        <a class="ai-btn-ghost" href="/about/">About Agni</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

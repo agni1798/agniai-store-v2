@@ -1,7 +1,7 @@
 ---
-// agniai.store v2 base layout
-// Dark, indigo-accented, SMB-friendly. Different visual rhythm from shopagni.com
-// because vet clinic / chiro / HVAC owners are NOT B2B SaaS founders.
+// agniai.store v2 base layout — Phase 5 repositioning (2026-05-04)
+// Endorsed sub-brand of Agni Consulting. North America first, globally aspirational.
+// Industry-flexible. Audit-first sales motion. Indigo identity, distinct from shopagni.com blue.
 
 export interface Props {
   title: string;
@@ -13,7 +13,7 @@ export interface Props {
 
 const {
   title,
-  description = 'AI-powered customer lifecycle for local service businesses — review automation, missed-call rescue, AI receptionist, appointment reminders, win-back. Built in Toronto for vet clinics, chiropractors, physiotherapists, HVAC, and home services.',
+  description = 'The AI customer lifecycle for owner-operated service businesses. Catch the missed call. Recover the lapsed client. Finish the care plan. Feed the review pipeline. Done-for-you, by operators. A service of Agni Consulting.',
   ogImage = '/og-default.png',
   noindex = false,
   canonical,
@@ -57,21 +57,24 @@ const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/styles/global.css" />
 
-    <!-- JSON-LD: Organization -->
+    <!-- JSON-LD: Organization with parentOrganization endorsement -->
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',
+      '@id': 'https://agniai.store/#organization',
       name: 'Agni AI Store',
-      alternateName: 'Agni AI · Customer Lifecycle for Local Service Businesses',
+      alternateName: 'Agni AI · Customer Lifecycle for Service Businesses',
       url: 'https://agniai.store',
-      description: 'AI customer lifecycle for local service businesses — vets, chiropractors, physiotherapists, HVAC. A division of Agni Consulting.',
+      description: 'The AI customer lifecycle for owner-operated service businesses. Done-for-you. A service of Agni Consulting.',
       email: 'hello@agniai.store',
-      areaServed: ['Toronto', 'Greater Toronto Area', 'Ontario', 'Canada'],
+      areaServed: ['Canada', 'United States', 'North America'],
       parentOrganization: {
         '@type': 'Organization',
+        '@id': 'https://shopagni.com/#organization',
         name: 'Agni Consulting',
         url: 'https://shopagni.com',
       },
+      sameAs: ['https://shopagni.com'],
     })} />
   </head>
   <body>
@@ -79,17 +82,27 @@ const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
       <nav class="ai-nav" aria-label="Primary">
         <a class="ai-brand-logo" href="/">
           <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
-            <path d="M16 4 C 22 12 26 18 26 22 a 10 10 0 0 1 -20 0 c 0 -4 4 -10 10 -18 z" fill="#6366f1" />
-            <path d="M16 14 c 2 3 4 6 4 8 a 4 4 0 0 1 -8 0 c 0 -2 2 -5 4 -8 z" fill="#a5b4fc" />
+            <defs>
+              <linearGradient id="aiFlame" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#a5b4fc"/>
+                <stop offset="60%" stop-color="#6366f1"/>
+                <stop offset="100%" stop-color="#4338ca"/>
+              </linearGradient>
+            </defs>
+            <path d="M16 4 C 22 12 26 18 26 22 a 10 10 0 0 1 -20 0 c 0 -4 4 -10 10 -18 z" fill="url(#aiFlame)" />
+            <path d="M16 14 c 2 3 4 6 4 8 a 4 4 0 0 1 -8 0 c 0 -2 2 -5 4 -8 z" fill="#ffffff" fill-opacity="0.55" />
           </svg>
-          <span>Agni<span style="color:#6366f1;">AI</span>.store</span>
+          <span class="ai-brand-mark">
+            <span class="ai-brand-name">Agni<span style="color:#6366f1;">AI</span>.store</span>
+            <span class="ai-brand-sub">An Agni Consulting service</span>
+          </span>
         </a>
         <ul class="ai-nav-links">
-          <li><a href="/for-vets/">Vet clinics</a></li>
-          <li><a href="/for-chiros/">Chiro / physio</a></li>
-          <li><a href="/for-hvac/">HVAC</a></li>
-          <li><a href="/services/">Pricing</a></li>
-          <li><a class="ai-nav-cta" href="/contact/">Book a call</a></li>
+          <li><a href="/industries/">Industries</a></li>
+          <li><a href="/engagements/">Engagements</a></li>
+          <li><a href="/how-it-works/">How it works</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a class="ai-nav-cta" href="/contact/">Free audit →</a></li>
         </ul>
       </nav>
     </header>
@@ -103,45 +116,59 @@ const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
         <div class="ai-footer-brand">
           <a class="ai-brand-logo" href="/">
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
-              <path d="M16 4 C 22 12 26 18 26 22 a 10 10 0 0 1 -20 0 c 0 -4 4 -10 10 -18 z" fill="#6366f1" />
-              <path d="M16 14 c 2 3 4 6 4 8 a 4 4 0 0 1 -8 0 c 0 -2 2 -5 4 -8 z" fill="#a5b4fc" />
+              <defs>
+                <linearGradient id="aiFlameFooter" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#a5b4fc"/>
+                  <stop offset="60%" stop-color="#6366f1"/>
+                  <stop offset="100%" stop-color="#4338ca"/>
+                </linearGradient>
+              </defs>
+              <path d="M16 4 C 22 12 26 18 26 22 a 10 10 0 0 1 -20 0 c 0 -4 4 -10 10 -18 z" fill="url(#aiFlameFooter)" />
+              <path d="M16 14 c 2 3 4 6 4 8 a 4 4 0 0 1 -8 0 c 0 -2 2 -5 4 -8 z" fill="#ffffff" fill-opacity="0.55" />
             </svg>
             <span>Agni<span style="color:#6366f1;">AI</span>.store</span>
           </a>
-          <p>AI customer lifecycle for local service businesses. A division of Agni Consulting. Built in Toronto for clinics and shops across the GTA.</p>
+          <p>The AI customer lifecycle for owner-operated service businesses. A service of <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Agni Consulting</a> — a B2B marketing-ops practice. Built by operators who&rsquo;ve shipped this stack inside Series-A and Series-B SaaS.</p>
         </div>
         <div class="ai-footer-cols">
           <div class="ai-footer-col">
-            <h4>Verticals</h4>
+            <h4>Industries</h4>
             <ul>
               <li><a href="/for-vets/">Vet clinics</a></li>
-              <li><a href="/for-chiros/">Chiro / physio</a></li>
-              <li><a href="/for-hvac/">HVAC</a></li>
+              <li><a href="/for-chiros/">Chiro &amp; physio</a></li>
+              <li><a href="/for-dental/">Dental</a></li>
+              <li><a href="/for-medspa/">Med-spa &amp; aesthetic</a></li>
+              <li><a href="/for-hvac/">HVAC &amp; home services</a></li>
+              <li><a href="/industries/">All industries</a></li>
             </ul>
           </div>
           <div class="ai-footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="/services/">Pricing</a></li>
+              <li><a href="/engagements/">Engagements</a></li>
               <li><a href="/how-it-works/">How it works</a></li>
               <li><a href="/about/">About</a></li>
+              <li><a href="/trust/">Trust &amp; compliance</a></li>
               <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>
           <div class="ai-footer-col">
-            <h4>Parent brand</h4>
+            <h4>Parent</h4>
             <ul>
               <li><a href="https://shopagni.com" target="_blank" rel="noopener">Agni Consulting</a></li>
-              <li><a href="https://shopagni.com/services-cart/" target="_blank" rel="noopener">B2B services</a></li>
+              <li><a href="https://shopagni.com/services-cart/" target="_blank" rel="noopener">B2B services catalogue</a></li>
+              <li><a href="https://shopagni.com/insights/" target="_blank" rel="noopener">Insights</a></li>
+              <li><a href="https://shopagni.com/about/" target="_blank" rel="noopener">About Agni</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="ai-footer-bottom">
-        <span>&copy; {new Date().getFullYear()} Agni Consulting. All rights reserved.</span>
+        <span>&copy; {new Date().getFullYear()} Agni Consulting · Toronto, Canada · Serving Canada &amp; the United States</span>
         <span>
           <a href="/privacy/">Privacy</a> &nbsp;·&nbsp;
           <a href="/terms/">Terms</a> &nbsp;·&nbsp;
+          <a href="/trust/">Trust</a> &nbsp;·&nbsp;
           <a href="mailto:hello@agniai.store">hello@agniai.store</a>
         </span>
       </div>

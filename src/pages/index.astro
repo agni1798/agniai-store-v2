@@ -1,74 +1,111 @@
 ---
-// agniai.store — home page
-// Positions the brand around the LEAK, not the LEAD. (Per ICP research:
-// owner-operators care more about plugging holes than pouring more in the top.)
+// agniai.store — home page (Phase 5 repositioning, 2026-05-04)
+// Universal pain over vertical-myopia. NA-anchored, geo-soft. No public dollar pricing.
+// Audit-first CTA. Endorsed sub-brand of Agni Consulting throughout.
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout
-  title="Agni AI Store — Stop bleeding bookings to voicemail"
-  description="AI-powered customer lifecycle for vet clinics, chiropractors, physiotherapists, and HVAC operators. Missed-call rescue, AI receptionist, review automation, win-back. Toronto-based. Done-for-you."
+  title="Agni AI Store — The AI customer lifecycle for service businesses"
+  description="We catch the missed call, recover the lapsed client, finish the care plan, and feed the review pipeline. Done-for-you AI customer lifecycle for owner-operated service businesses across North America. A service of Agni Consulting."
 >
   <!-- ─── Hero ─── -->
   <section class="ai-hero">
-    <p class="ai-eyebrow">VET CLINICS · CHIROPRACTORS · PHYSIO · HVAC</p>
-    <h1>Stop bleeding bookings to voicemail.</h1>
+    <p class="ai-eyebrow">FOR OWNER-OPERATED SERVICE BUSINESSES</p>
+    <h1>Your phone rings. <br>Your file is full. <br>Your team is busy.<br>Most of it is leaking out the back.</h1>
     <p class="ai-lead">
-      Most clinics and shops in the GTA lose 25–60% of inbound calls every week.
-      No-shows cost another $150–$300 a pop. And the 3,000 clients who haven't been in for a year?
-      Sitting in your software, never reached out to.
+      Independent service businesses miss 22&ndash;62% of inbound calls every week. Lapsed clients sit in the software, never reached out to. New leads wait 24+ hours for a reply &mdash; the operator who answers in five minutes wins twenty-one out of twenty-two of them. None of this is your fault. The medicine, the trade, the work has to come first.
     </p>
     <p class="ai-lead" style="font-weight:600;color:var(--tx);">
-      We run the customer lifecycle for you. AI-powered, done-for-you, $1,497/mo to start.
+      We run the customer lifecycle for you. Missed-call rescue, recall, review velocity, lead response, win-back. Done-for-you, by operators &mdash; not an agency, not a SaaS dashboard.
     </p>
     <div class="ai-cta-row">
-      <a class="ai-btn" href="/services/">See pricing →</a>
+      <a class="ai-btn" href="/contact/">Book a free Growth Audit &rarr;</a>
       <a class="ai-btn-ghost" href="/how-it-works/">How it works</a>
+    </div>
+    <p style="margin-top:14px;font-size:13px;color:var(--tx-dim);">
+      30 minutes on Zoom. One-page leak report inside 24 hours. Yours to keep, even if you never hire us.
+    </p>
+  </section>
+
+  <!-- ─── The 4 leaks ─── -->
+  <section class="ai-section">
+    <div class="ai-wrap">
+      <p class="ai-eyebrow" style="text-align:center;">The four leaks</p>
+      <h2 style="text-align:center;margin-bottom:12px;">Every owner-operator has the same four holes in the bucket.</h2>
+      <p style="text-align:center;color:var(--tx-soft);max-width:680px;margin:0 auto 40px;">
+        We've audited service businesses across veterinary, chiropractic, physiotherapy, dental, aesthetic, HVAC, optometry, and home-services. The same four leaks show up every time. The dollar amounts are bigger than most owners think.
+      </p>
+      <div class="ai-grid-2">
+
+        <div class="ai-card">
+          <h3>1. The phone leak</h3>
+          <p style="color:var(--tx-soft);">22&ndash;62% of inbound calls go to voicemail. 85% of those callers don&rsquo;t call back &mdash; they call your competitor. For an average independent practice that&rsquo;s $45K&ndash;$200K of new-client revenue walking away every year, depending on industry and ticket size.</p>
+          <p style="color:var(--tx-dim);font-size:13px;margin-top:14px;">Sources: BrightLocal 2025; AVMA 2024; HVACR Business 2025</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>2. The dormant-client iceberg</h3>
+          <p style="color:var(--tx-soft);">Every service business has 10&ndash;35% of its file lapsed. Dental practices average $500K&ndash;$1.5M in dormant lifetime value. Vet practices average $200K&ndash;$600K. AI-driven reactivation recovers 33&ndash;36% of them at 50&ndash;140&times; ROI. Most independents have never run a single reactivation campaign.</p>
+          <p style="color:var(--tx-dim);font-size:13px;margin-top:14px;">Sources: Dental Economics 2025; Salesforce SMB Trends 2025</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>3. The five-minute response gap</h3>
+          <p style="color:var(--tx-soft);">MIT&rsquo;s study of 2.24M leads: respond in five minutes and you&rsquo;re 21&times; more likely to convert. Industry average is 42 hours. 78% of customers buy from whoever replies first. New leads from your website, your Google profile, and your Instagram DMs deserve faster than &ldquo;I&rsquo;ll call them tomorrow.&rdquo;</p>
+          <p style="color:var(--tx-dim);font-size:13px;margin-top:14px;">Sources: MIT InsideSales; Harvard Business Review</p>
+        </div>
+
+        <div class="ai-card">
+          <h3>4. The review velocity gap</h3>
+          <p style="color:var(--tx-soft);">Practices with at least one new review per week rank 25% higher in the Google local pack. 73% of consumers only trust reviews from the last 30 days. Corporate consolidators ask for reviews on autopilot. Independents don&rsquo;t. Result: the corporate clinic four blocks away has 600 reviews; you have 142.</p>
+          <p style="color:var(--tx-dim);font-size:13px;margin-top:14px;">Sources: BrightLocal Local Consumer Review Survey 2025</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- ─── Vertical selector ─── -->
+  <!-- ─── Industries strip ─── -->
   <section class="ai-section-tight">
     <div class="ai-wrap">
-      <p class="ai-eyebrow" style="text-align:center;">Pick your industry</p>
-      <h2 style="text-align:center;margin-bottom:32px;">Built for the way YOU run your business.</h2>
+      <p class="ai-eyebrow" style="text-align:center;">Industries we run lifecycle for</p>
+      <h2 style="text-align:center;margin-bottom:32px;">Same playbook. Industry-specific vocabulary, software, and rules.</h2>
       <div class="ai-vertical-strip">
 
         <a class="ai-vertical-card" href="/for-vets/">
-          <div class="ai-vertical-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="11" cy="4" r="2"/>
-              <circle cx="18" cy="8" r="2"/>
-              <circle cx="20" cy="16" r="2"/>
-              <path d="M9 10c-2 0-3.5 1.5-4 4-.5 4 2 5 4 5 1.5 0 3-1 5-1s4 2 5 0c1-3-2-7-4-7-2-1-4-1-6-1z"/>
-            </svg>
-          </div>
           <h3>Vet clinics</h3>
-          <p>Recall lapsed clients, catch after-hours calls, drown out the bad reviews. AVImark / Cornerstone / ezyVet integration.</p>
-          <span class="ai-vertical-card-arrow">For vet clinics →</span>
+          <p>Recall, lapsed-client win-back, after-hours calls, CVO/AVMA-compliant review automation. Wraps around AVImark, Cornerstone, ezyVet, Vetspire, Covetrus.</p>
+          <span class="ai-vertical-card-arrow">For vet clinics &rarr;</span>
         </a>
 
         <a class="ai-vertical-card" href="/for-chiros/">
-          <div class="ai-vertical-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-              <circle cx="12" cy="12" r="4"/>
-            </svg>
-          </div>
-          <h3>Chiropractors &amp; Physio</h3>
-          <p>Reactivate inactives, fix the 5-minute lead response, finish care plans. Jane App–native.</p>
-          <span class="ai-vertical-card-arrow">For chiro / physio →</span>
+          <h3>Chiro &amp; physio</h3>
+          <p>Reactivation, five-minute lead response, care-plan completion, College-compliant review velocity. Jane App&ndash;native. HIPAA BAA on request.</p>
+          <span class="ai-vertical-card-arrow">For chiro &amp; physio &rarr;</span>
+        </a>
+
+        <a class="ai-vertical-card" href="/for-dental/">
+          <h3>Dental</h3>
+          <p>Hygiene recall, dormant-patient reactivation, treatment-plan completion, post-op review velocity. Wraps around Open Dental, Dentrix, ClearDent.</p>
+          <span class="ai-vertical-card-arrow">For dental &rarr;</span>
+        </a>
+
+        <a class="ai-vertical-card" href="/for-medspa/">
+          <h3>Med-spa &amp; aesthetic</h3>
+          <p>Membership reactivation, missed-consultation rescue, package upsell sequences, before/after review automation. Wraps around Boulevard, Aesthetics Pro, Vagaro.</p>
+          <span class="ai-vertical-card-arrow">For med-spa &rarr;</span>
         </a>
 
         <a class="ai-vertical-card" href="/for-hvac/">
-          <div class="ai-vertical-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M3 12h18M6 6h12M6 18h12"/>
-              <circle cx="12" cy="12" r="3"/>
-            </svg>
-          </div>
-          <h3>HVAC &amp; Home Services</h3>
-          <p>Stop missing calls in season. Fill the spring/fall shoulder. Triple your service-agreement attach. ServiceTitan / Housecall Pro / Jobber–compatible.</p>
-          <span class="ai-vertical-card-arrow">For HVAC →</span>
+          <h3>HVAC &amp; home services</h3>
+          <p>In-season missed-call rescue, service-agreement attach, post-job review automation, shoulder-season fill. Wraps around ServiceTitan, Housecall Pro, Jobber.</p>
+          <span class="ai-vertical-card-arrow">For HVAC &rarr;</span>
+        </a>
+
+        <a class="ai-vertical-card" href="/industries/" style="background:var(--accent-soft);border-color:var(--accent);">
+          <h3>And more</h3>
+          <p>Optometry. Mental-health practices. Small-firm legal. Salons &amp; spas. Specialty fitness. Pet grooming. We&rsquo;ll tell you on the audit if your shape fits.</p>
+          <span class="ai-vertical-card-arrow">All industries &rarr;</span>
         </a>
 
       </div>
@@ -79,11 +116,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="ai-section">
     <div class="ai-wrap ai-narrow" style="text-align:center;">
       <p class="ai-eyebrow">Why this exists</p>
-      <h2>Birdeye and Podium do reviews. HighLevel agencies do funnels. <br>Nobody runs the whole lifecycle for you.</h2>
+      <h2>Reviews tools do reviews. <br>Funnel agencies do funnels. <br>Voice agents answer the call. <br>Nobody runs the whole lifecycle for you.</h2>
       <p class="ai-lead" style="margin-top:24px;">
-        We do. One system that catches the missed call, sends the reminder, asks for the review,
-        rebooks the lapsed client, and quietly recovers the bookings that used to fall through the cracks.
-        Done for you, by people who've shipped this stack inside Series-A SaaS companies.
+        We do. One operating system that catches the missed call, sends the reminder, asks for the review, rebooks the lapsed client, fills the shoulder season, and quietly recovers the bookings that used to fall through the cracks. Done-for-you, by people who&rsquo;ve shipped this stack inside Series-A and Series-B B2B SaaS &mdash; we just brought it down to where it&rsquo;s genuinely needed.
+      </p>
+      <p style="margin-top:16px;color:var(--tx-soft);">
+        Agni AI Store is a service of <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);">Agni Consulting</a>, a B2B marketing-ops practice that&rsquo;s spent the last decade running this exact stack inside venture-backed companies. This is the version we built for owner-operators.
       </p>
     </div>
   </section>
@@ -92,10 +130,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section>
     <div class="ai-wrap">
       <div class="ai-stats-row">
-        <div class="ai-stat"><strong>25–60%</strong><span>inbound calls missed</span></div>
-        <div class="ai-stat"><strong>$2,000+</strong><span>LTV per recovered new client</span></div>
-        <div class="ai-stat"><strong>38–50%</strong><span>no-shows reduced (SMS)</span></div>
-        <div class="ai-stat"><strong>5×</strong><span>more reviews via SMS vs email</span></div>
+        <div class="ai-stat"><strong>22&ndash;62%</strong><span>of inbound calls missed (industry-dependent)</span></div>
+        <div class="ai-stat"><strong>21&times;</strong><span>conversion lift on 5-minute lead response (MIT)</span></div>
+        <div class="ai-stat"><strong>33&ndash;36%</strong><span>dormant-client recovery via AI reactivation</span></div>
+        <div class="ai-stat"><strong>25%</strong><span>local-pack rank lift from 1+ review/week</span></div>
       </div>
     </div>
   </section>
@@ -104,21 +142,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="ai-section">
     <div class="ai-wrap">
       <p class="ai-eyebrow" style="text-align:center;">How it works</p>
-      <h2 style="text-align:center;margin-bottom:32px;">Three weeks from "we should do this" to "running on autopilot."</h2>
+      <h2 style="text-align:center;margin-bottom:32px;">Three engagement shapes. Audit first. No long contracts.</h2>
       <div class="ai-grid-3">
         <div class="ai-card">
-          <h3>1. Free audit call</h3>
-          <p>30 minutes on Zoom. We walk your phone log, your software, your Google profile, your last 90 days of bookings. Hand back a one-page leak report. No pitch, no slides.</p>
+          <h3>1. Free Growth Audit</h3>
+          <p>30 minutes on Zoom. We screen-share your software, your phone log, your Google profile, your last 90 days of bookings. You get a one-page leak report inside 24 hours, ranked by recoverable dollars. No deck, no pitch. Yours to keep even if you never hire us.</p>
         </div>
         <div class="ai-card">
-          <h3>2. We build it for you</h3>
-          <p>HighLevel snapshot cloned to your business, n8n flows wired to your existing CRM/PIMS/FSM, Twilio number live, AI receptionist trained on your services. 7–10 days end to end.</p>
+          <h3>2. Pilot</h3>
+          <p>60 days, fixed scope. We build the highest-leverage system from the leak report &mdash; usually missed-call recovery + review automation. You see the dollar impact before you commit to anything monthly. No long contracts, no surprises.</p>
         </div>
         <div class="ai-card">
-          <h3>3. We run it for you</h3>
-          <p>Monthly retainer covers ops, optimization, content, reporting. You see the dashboard. We do the work. Cancel any time after the first 90 days.</p>
+          <h3>3. Run-It</h3>
+          <p>Monthly retainer. Done-for-you operations across the full lifecycle &mdash; we run the systems, you see the dashboard. Cancel any time after the first 90 days. Most independents are saving more than they spend by month two.</p>
         </div>
       </div>
+      <p style="text-align:center;color:var(--tx-soft);margin-top:24px;font-size:14px;">
+        Engagements typically range from low-four-figures to mid-four-figures monthly, scoped to your size and the systems we run for you. We share specific pricing on the audit call once we&rsquo;ve seen what fits.
+      </p>
     </div>
   </section>
 
@@ -126,11 +167,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="ai-section">
     <div class="ai-wrap ai-narrow" style="text-align:center;">
       <h2>30-minute audit. No deck. No pitch. Just diagnostics.</h2>
-      <p class="ai-lead">We tell you what's leaking and what to fix first — even if you never hire us.</p>
+      <p class="ai-lead">We tell you what&rsquo;s leaking and what to fix first &mdash; even if you never hire us.</p>
       <div class="ai-cta-row">
-        <a class="ai-btn" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Book the audit →</a>
-        <a class="ai-btn-ghost" href="/services/">See pricing</a>
+        <a class="ai-btn" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Book the audit &rarr;</a>
+        <a class="ai-btn-ghost" href="/engagements/">See engagement shapes</a>
       </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--tx-dim);">
+        Serving Canada and the United States. By <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--tx-soft);">Agni Consulting</a>, Toronto.
+      </p>
     </div>
   </section>
 </BaseLayout>
