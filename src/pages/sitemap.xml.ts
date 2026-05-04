@@ -11,6 +11,7 @@ const PATHS: Array<{ path: string; priority: number; changefreq: string }> = [
   { path: '/for-medspa/',      priority: 0.95, changefreq: 'monthly' },
   { path: '/for-hvac/',        priority: 0.95, changefreq: 'monthly' },
   { path: '/engagements/',     priority: 0.9,  changefreq: 'monthly' },
+  { path: '/case-studies/',    priority: 0.85, changefreq: 'monthly' },
   { path: '/how-it-works/',    priority: 0.8,  changefreq: 'monthly' },
   { path: '/about/',           priority: 0.7,  changefreq: 'monthly' },
   { path: '/trust/',           priority: 0.7,  changefreq: 'monthly' },

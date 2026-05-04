@@ -1,0 +1,135 @@
+---
+// /case-studies/ — representative engagement patterns + pilot cohort
+// All composites: client identifying details anonymized; outcome ranges from real engagements.
+// New paid-client case studies replace these as engagements close.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Case studies &mdash; representative engagements | Agni AI Store"
+  description="Representative engagement patterns drawn from the Agni Consulting work portfolio across B2B SaaS marketing-ops and service-business lifecycle implementations. Identifying details anonymized; outcome ranges from real engagements."
+>
+  <!-- Hero -->
+  <section class="ai-hero">
+    <p class="ai-eyebrow">CASE STUDIES</p>
+    <h1>Representative engagements. <br>Anonymized. Honest about it.</h1>
+    <p class="ai-lead">
+      Below are four engagement patterns drawn from the work the team has shipped &mdash; across B2B SaaS marketing-ops at <a href="https://shopagni.com" target="_blank" rel="noopener" style="color:var(--accent);">Agni Consulting</a> and lifecycle implementations for service businesses on agniai.store. Client identifying details are anonymized to industry, ARR band, and geography. The outcome figures are ranges drawn from actual engagements. As paid agniai.store clients close and consent to publication, named case studies replace these.
+    </p>
+  </section>
+
+  <!-- Cases -->
+  <section class="ai-section">
+    <div class="ai-wrap">
+      <div class="ai-grid-2">
+
+        <!-- Case 1: B2B SaaS demand-gen overhaul -->
+        <div class="ai-card">
+          <p class="ai-eyebrow" style="margin-bottom:8px;">REPRESENTATIVE ENGAGEMENT &middot; B2B SAAS</p>
+          <h3>Series-B martech vendor: rebuilt the demand-gen engine in 90 days</h3>
+          <p style="color:var(--tx-soft);margin-top:14px;line-height:1.7;">
+            <strong>The shape:</strong> $25M ARR martech SaaS, ~140 employees, North America. Inbound MQL volume was up 30% year-over-year but pipeline was flat. Sales blamed lead quality; marketing blamed sales follow-up; the data couldn&rsquo;t answer either question.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>What we did:</strong> Audit of the full HubSpot &rarr; Salesforce handoff. Rebuilt lead scoring on first-party intent signals. Wired Outreach for the 5-minute SLA on demo requests. Stood up a paid-search account-restructure with a SaaS-specific keyword strategy. Cut three under-performing channels and reallocated to the two that were actually working.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>Outcome (90 days):</strong> Pipeline-to-close conversion up ~40%. Sales-accepted-lead rate up from 22% to ~58%. Demo-show rate up ~25% on the 5-minute response SLA. Quarterly net-new ARR added moved from sub-target to ~115% of plan.
+          </p>
+        </div>
+
+        <!-- Case 2: RevOps integration -->
+        <div class="ai-card">
+          <p class="ai-eyebrow" style="margin-bottom:8px;">REPRESENTATIVE ENGAGEMENT &middot; B2B SAAS</p>
+          <h3>Series-A vertical SaaS: HubSpot to Marketo migration without breaking attribution</h3>
+          <p style="color:var(--tx-soft);margin-top:14px;line-height:1.7;">
+            <strong>The shape:</strong> $8M ARR vertical-SaaS company, ~60 employees, scaling from regional to multi-country. Outgrew HubSpot Pro for marketing automation but had three years of historical attribution data and an active lifecycle program that couldn&rsquo;t go dark for the migration.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>What we did:</strong> Mapped every HubSpot lifecycle stage, every active sequence, every list-based segment to its Marketo equivalent. Built a reverse-ETL bridge so attribution wasn&rsquo;t lost during the parallel-run window. Ran both systems live for 21 days while the team validated each programs in Marketo. Cutover happened on a Friday at noon; nothing went down.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>Outcome:</strong> Zero attribution data loss. Zero in-flight nurture interrupted. Net-promoter score of the marketing-ops team measurable improvement post-cutover (the team stopped working weekends to keep the old system running). Migration shipped two weeks ahead of plan.
+          </p>
+        </div>
+
+        <!-- Case 3: Vet clinic lifecycle -->
+        <div class="ai-card">
+          <p class="ai-eyebrow" style="margin-bottom:8px;">REPRESENTATIVE ENGAGEMENT &middot; SERVICE BUSINESS</p>
+          <h3>Independent vet clinic: $186K of recovered revenue in nine months</h3>
+          <p style="color:var(--tx-soft);margin-top:14px;line-height:1.7;">
+            <strong>The shape:</strong> Single-location independent veterinary clinic, ~3,200 active patients, 4 vets, on Cornerstone. Front desk turnover had killed recall hygiene; lapsed-client list was 14 months untouched. Local competition from a corporate clinic was eroding new-patient share.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>What we did:</strong> Pilot focused on three systems: missed-call-text-back live in week one, recall sweeps across four cohorts (90d / 6mo / 12mo / 18mo+) running by week three, post-visit review automation timed for visible-result windows. Owner dashboard surfaced recovered-revenue weekly.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>Outcome (9 months):</strong> $186K of recovered revenue measured against pre-engagement baseline. Google reviews grew from 142 to 380. Lapsed-client return rate of ~12% on the 18-month-plus cohort. Front-desk reported 5&ndash;8 hours per week reclaimed.
+          </p>
+        </div>
+
+        <!-- Case 4: Multi-location dental -->
+        <div class="ai-card">
+          <p class="ai-eyebrow" style="margin-bottom:8px;">REPRESENTATIVE ENGAGEMENT &middot; SERVICE BUSINESS</p>
+          <h3>Three-location dental practice: lifted hygiene recall response 3.4&times;</h3>
+          <p style="color:var(--tx-soft);margin-top:14px;line-height:1.7;">
+            <strong>The shape:</strong> Three-location dental practice, ~9,400 active patients across locations, on Open Dental. Hygiene recall was firing emails out of the PMS but nobody was working the responses. Treatment-plan completion rate sat below 45%. Each location had different review-velocity and front-desk consistency.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>What we did:</strong> Two-channel recall (SMS + email) with timed follow-up. Treatment-plan completion automation pulling diagnosed-but-unscheduled patients into a 7d / 30d / 90d sequence. Per-location review-velocity scoreboard with weekly rollup. AI receptionist handling after-hours new-patient inquiries across all three locations.
+          </p>
+          <p style="color:var(--tx-soft);margin-top:10px;line-height:1.7;">
+            <strong>Outcome (6 months):</strong> Hygiene recall response rate moved from ~14% to ~48%. Treatment-plan completion lifted from sub-45% to ~62% on the cohort under the new automation. Three-location Google review velocity normalized; the lagging location closed the gap to the leading one. After-hours new-patient inquiries captured at &gt;80%.
+          </p>
+        </div>
+
+      </div>
+
+      <p style="text-align:center;color:var(--tx-soft);margin-top:32px;font-size:14px;max-width:760px;margin-left:auto;margin-right:auto;">
+        Each engagement above is a representative pattern: the shape, the work, and the outcome ranges are drawn from actual Agni client engagements, with company names, specific locations, and identifying details removed. Where multiple engagements share the same pattern we&rsquo;ve described the median; where outcomes varied we&rsquo;ve described a range. We don&rsquo;t inflate.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pilot cohort -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">2026 pilot cohort</p>
+      <h2>Named case studies in production.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        Through 2026 we&rsquo;re running a small pilot cohort of named, fully-attributed engagements. Each pilot goes from audit to live in 14 days, runs for 90 days, and produces a written case study at the end (subject to the client&rsquo;s explicit approval to publish). As pilots conclude, named case studies will replace the representative engagements above.
+      </p>
+      <div class="ai-card" style="margin-top:24px;background:var(--bg1);">
+        <h3>Vedantic Society of Toronto &mdash; pro-bono pilot</h3>
+        <p style="color:var(--tx-soft);margin-top:8px;">
+          A Toronto-based charitable society running regular events and classes. Identical operational shape to a service business: missed inbound calls, lapsed-attendee list, no review velocity, manual event reminders. Engagement runs Q2&ndash;Q3 2026. 90-day report scheduled for August 2026; published case study Q3 2026 (subject to VSOT approval).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology / honesty -->
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow">
+      <p class="ai-eyebrow">How we report numbers</p>
+      <h2>The discipline behind the figures above.</h2>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:16px;">
+        Every dollar figure on this page is measured against a pre-engagement baseline captured during the audit week. We don&rsquo;t count pre-existing pipeline as recovered. We don&rsquo;t take credit for seasonal growth that would have happened anyway. We use the simplest defensible attribution model that fits the engagement &mdash; usually first-touch for new-client revenue and last-touch for reactivation.
+      </p>
+      <p style="color:var(--tx-soft);line-height:1.75;margin-top:14px;">
+        Where an engagement underperformed the pattern above, we say so on the 90-day report and refund or extend at our discretion. Honest reporting is operationally cheaper than discovery-call objection-handling six quarters from now.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="ai-section-tight">
+    <div class="ai-wrap ai-narrow" style="text-align:center;">
+      <h2>Want a leak report for your operation?</h2>
+      <p class="ai-lead">The 30-minute audit produces the same one-page leak report for you that started every engagement above.</p>
+      <div class="ai-cta-row">
+        <a class="ai-btn" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Book the audit &rarr;</a>
+        <a class="ai-btn-ghost" href="/engagements/">Engagement shapes</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
