@@ -84,13 +84,14 @@ p { margin: 0 0 16px; }
   font-weight: 700;
   font-size: 18px;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
-.ai-brand-logo img { width: 32px; height: 32px; }
-.ai-brand-logo svg { width: 28px; height: 28px; }
+.ai-brand-logo img { width: 32px; height: 32px; flex: 0 0 32px; }
+.ai-brand-logo > svg { width: 32px !important; height: 32px !important; flex: 0 0 32px; }
 .ai-brand-logo:hover { color: var(--tx); }
 .ai-brand-mark { display: flex; flex-direction: column; line-height: 1.05; gap: 1px; }
-.ai-brand-name { font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
-.ai-brand-sub { font-size: 11px; font-weight: 500; color: var(--tx-soft); letter-spacing: 0.02em; }
+.ai-brand-name { font-weight: 700; font-size: 18px; letter-spacing: -0.01em; white-space: nowrap; }
+.ai-brand-sub { font-size: 10.5px; font-weight: 500; color: var(--tx-soft); letter-spacing: 0.02em; white-space: nowrap; }
 .ai-nav-links {
   list-style: none;
   margin: 0;
