@@ -1,0 +1,117 @@
+---
+// /services/ — full pricing comparison page (3 tiers, side-by-side feature matrix)
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Pricing — Plug The Leak / Fill The Calendar / Run It For Me"
+  description="Three tiers, transparent pricing in CAD, no long contracts. Plug The Leak from $1,497/mo. Fill The Calendar from $2,497/mo. Run It For Me from $4,997/mo. Cancel any time after 90 days."
+>
+  <section class="ai-hero">
+    <p class="ai-eyebrow">PRICING</p>
+    <h1>Three tiers. Cancel after 90 days.</h1>
+    <p class="ai-lead">All prices in CAD, all month-to-month after the first 90 days. The free audit is free even if you never sign anything — that's the offer.</p>
+  </section>
+
+  <section class="ai-section">
+    <div class="ai-wrap">
+      <div class="ai-tiers">
+
+        <article class="ai-tier">
+          <h3>Plug The Leak</h3>
+          <p class="ai-tier-tagline">Stop bleeding</p>
+          <p class="ai-tier-price">$1,497<span style="font-size:16px;font-weight:500;color:var(--tx-soft);">/mo</span></p>
+          <p class="ai-tier-price-sub">+ $1,500 one-time setup &nbsp;·&nbsp; 90-day minimum</p>
+          <ul class="ai-checklist">
+            <li>Missed-call-text-back (60-second SMS)</li>
+            <li>SMS appointment reminders (7d / 24h / 2h)</li>
+            <li>Google review automation</li>
+            <li>Two-way SMS team inbox</li>
+            <li>Owner dashboard + monthly PDF</li>
+            <li>PIMS / Jane / FSM integration</li>
+            <li>Email support, 24-hr response</li>
+          </ul>
+          <a class="ai-btn-ghost" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Start with Plug The Leak →</a>
+        </article>
+
+        <article class="ai-tier ai-tier-featured">
+          <h3>Fill The Calendar</h3>
+          <p class="ai-tier-tagline">Most clinics start here</p>
+          <p class="ai-tier-price">$2,497<span style="font-size:16px;font-weight:500;color:var(--tx-soft);">/mo</span></p>
+          <p class="ai-tier-price-sub">+ $2,500 one-time setup &nbsp;·&nbsp; 90-day minimum</p>
+          <ul class="ai-checklist">
+            <li>Everything in Plug The Leak</li>
+            <li>Reactivation / win-back sequences</li>
+            <li>Recall / care-plan / agreement-attach automation</li>
+            <li>Lead-response within 60 seconds (multi-channel)</li>
+            <li>Monthly content (newsletter + 4 social posts)</li>
+            <li>Google Ads management (lite)</li>
+            <li>Quarterly strategy review</li>
+            <li>Priority email support, 4-hr response</li>
+          </ul>
+          <a class="ai-btn" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Start with Fill The Calendar →</a>
+        </article>
+
+        <article class="ai-tier">
+          <h3>Run It For Me</h3>
+          <p class="ai-tier-tagline">Done-for-you, end-to-end</p>
+          <p class="ai-tier-price">$4,997<span style="font-size:16px;font-weight:500;color:var(--tx-soft);">/mo</span></p>
+          <p class="ai-tier-price-sub">+ $5,000 one-time setup &nbsp;·&nbsp; 90-day minimum</p>
+          <ul class="ai-checklist">
+            <li>Everything in Fill The Calendar</li>
+            <li>AI voice receptionist (24/7 or after-hours)</li>
+            <li>Custom n8n integrations (your specific quirks)</li>
+            <li>Dedicated ops contact</li>
+            <li>Weekly check-in call</li>
+            <li>Quarterly Aman strategy session</li>
+            <li>Phone + SMS support, 1-hr response</li>
+          </ul>
+          <a class="ai-btn-ghost" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Start with Run It For Me →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-section">
+    <div class="ai-wrap ai-narrow" style="text-align:center;">
+      <p class="ai-eyebrow">FAQs</p>
+      <h2>The questions everyone asks.</h2>
+      <div style="text-align:left;margin-top:32px;">
+        <details class="ai-card" style="margin-bottom:12px;">
+          <summary style="cursor:pointer;font-weight:600;color:var(--tx);font-size:16px;">Do I have to switch software?</summary>
+          <p style="margin-top:12px;">No. We wrap around your existing PIMS / Jane App / ServiceTitan / Housecall Pro / Jobber. Your team uses what they already use.</p>
+        </details>
+        <details class="ai-card" style="margin-bottom:12px;">
+          <summary style="cursor:pointer;font-weight:600;color:var(--tx);font-size:16px;">What if it doesn't work?</summary>
+          <p style="margin-top:12px;">90-day minimum. After that, cancel any time, 30 days notice. Your data is yours and we hand it back. No clawback.</p>
+        </details>
+        <details class="ai-card" style="margin-bottom:12px;">
+          <summary style="cursor:pointer;font-weight:600;color:var(--tx);font-size:16px;">Who actually delivers the work?</summary>
+          <p style="margin-top:12px;">Aman Gupta — founder of Agni Consulting — leads every implementation personally for the first 90 days. After that, an Agni operator runs ongoing ops with Aman as quarterly check-in.</p>
+        </details>
+        <details class="ai-card" style="margin-bottom:12px;">
+          <summary style="cursor:pointer;font-weight:600;color:var(--tx);font-size:16px;">Do you respect CVO / CCO / College advertising rules?</summary>
+          <p style="margin-top:12px;">Yes — we know them. Vet clinics: CVO Advertising Standards. Chiropractors: College of Chiropractors of Ontario. Physiotherapists: College of Physiotherapists of Ontario. Our copy is reviewed against the relevant College's rules before it goes live.</p>
+        </details>
+        <details class="ai-card" style="margin-bottom:12px;">
+          <summary style="cursor:pointer;font-weight:600;color:var(--tx);font-size:16px;">Is my data secure?</summary>
+          <p style="margin-top:12px;">All client data stays inside your existing PIMS / Jane / FSM. We sync via API; we don't host PHI / PHIPA-protected data on our infrastructure. We're PIPEDA-compliant.</p>
+        </details>
+        <details class="ai-card">
+          <summary style="cursor:pointer;font-weight:600;color:var(--tx);font-size:16px;">What's the audit really cost?</summary>
+          <p style="margin-top:12px;">Nothing. 30-min Zoom, we screen-share your software with you, walk the gaps, hand you a one-page leak report. Yours to keep, even if you never sign with us.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-section-tight">
+    <div class="ai-wrap ai-narrow" style="text-align:center;">
+      <h2>Ready to see the leak?</h2>
+      <div class="ai-cta-row">
+        <a class="ai-btn" href="https://calendly.com/aman-shopagni" target="_blank" rel="noopener">Book the free audit →</a>
+        <a class="ai-btn-ghost" href="/contact/">Or send a message</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

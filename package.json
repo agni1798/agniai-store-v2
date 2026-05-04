@@ -1,0 +1,17 @@
+{
+  "name": "agniai-store-v2",
+  "version": "2.0.0",
+  "type": "module",
+  "private": true,
+  "description": "agniai.store v2 — AI customer lifecycle for local service businesses (vet / chiro / HVAC). Astro on Cloudflare Pages.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  }
+}

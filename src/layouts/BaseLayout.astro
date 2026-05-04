@@ -1,0 +1,150 @@
+---
+// agniai.store v2 base layout
+// Dark, indigo-accented, SMB-friendly. Different visual rhythm from shopagni.com
+// because vet clinic / chiro / HVAC owners are NOT B2B SaaS founders.
+
+export interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  noindex?: boolean;
+  canonical?: string;
+}
+
+const {
+  title,
+  description = 'AI-powered customer lifecycle for local service businesses — review automation, missed-call rescue, AI receptionist, appointment reminders, win-back. Built in Toronto for vet clinics, chiropractors, physiotherapists, HVAC, and home services.',
+  ogImage = '/og-default.png',
+  noindex = false,
+  canonical,
+} = Astro.props;
+
+const siteName = 'Agni AI Store';
+const fullTitle = title.includes('Agni') ? title : `${title} | ${siteName}`;
+const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    <link rel="canonical" href={url} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site).toString()} />
+    <meta property="og:site_name" content={siteName} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site).toString()} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles/global.css" />
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Agni AI Store',
+      alternateName: 'Agni AI · Customer Lifecycle for Local Service Businesses',
+      url: 'https://agniai.store',
+      description: 'AI customer lifecycle for local service businesses — vets, chiropractors, physiotherapists, HVAC. A division of Agni Consulting.',
+      email: 'hello@agniai.store',
+      areaServed: ['Toronto', 'Greater Toronto Area', 'Ontario', 'Canada'],
+      parentOrganization: {
+        '@type': 'Organization',
+        name: 'Agni Consulting',
+        url: 'https://shopagni.com',
+      },
+    })} />
+  </head>
+  <body>
+    <header class="ai-site-header">
+      <nav class="ai-nav" aria-label="Primary">
+        <a class="ai-brand-logo" href="/">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+            <path d="M16 4 C 22 12 26 18 26 22 a 10 10 0 0 1 -20 0 c 0 -4 4 -10 10 -18 z" fill="#6366f1" />
+            <path d="M16 14 c 2 3 4 6 4 8 a 4 4 0 0 1 -8 0 c 0 -2 2 -5 4 -8 z" fill="#a5b4fc" />
+          </svg>
+          <span>Agni<span style="color:#6366f1;">AI</span>.store</span>
+        </a>
+        <ul class="ai-nav-links">
+          <li><a href="/for-vets/">Vet clinics</a></li>
+          <li><a href="/for-chiros/">Chiro / physio</a></li>
+          <li><a href="/for-hvac/">HVAC</a></li>
+          <li><a href="/services/">Pricing</a></li>
+          <li><a class="ai-nav-cta" href="/contact/">Book a call</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="ai-site-footer">
+      <div class="ai-footer-inner">
+        <div class="ai-footer-brand">
+          <a class="ai-brand-logo" href="/">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+              <path d="M16 4 C 22 12 26 18 26 22 a 10 10 0 0 1 -20 0 c 0 -4 4 -10 10 -18 z" fill="#6366f1" />
+              <path d="M16 14 c 2 3 4 6 4 8 a 4 4 0 0 1 -8 0 c 0 -2 2 -5 4 -8 z" fill="#a5b4fc" />
+            </svg>
+            <span>Agni<span style="color:#6366f1;">AI</span>.store</span>
+          </a>
+          <p>AI customer lifecycle for local service businesses. A division of Agni Consulting. Built in Toronto for clinics and shops across the GTA.</p>
+        </div>
+        <div class="ai-footer-cols">
+          <div class="ai-footer-col">
+            <h4>Verticals</h4>
+            <ul>
+              <li><a href="/for-vets/">Vet clinics</a></li>
+              <li><a href="/for-chiros/">Chiro / physio</a></li>
+              <li><a href="/for-hvac/">HVAC</a></li>
+            </ul>
+          </div>
+          <div class="ai-footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/services/">Pricing</a></li>
+              <li><a href="/how-it-works/">How it works</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+          <div class="ai-footer-col">
+            <h4>Parent brand</h4>
+            <ul>
+              <li><a href="https://shopagni.com" target="_blank" rel="noopener">Agni Consulting</a></li>
+              <li><a href="https://shopagni.com/services-cart/" target="_blank" rel="noopener">B2B services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ai-footer-bottom">
+        <span>&copy; {new Date().getFullYear()} Agni Consulting. All rights reserved.</span>
+        <span>
+          <a href="/privacy/">Privacy</a> &nbsp;·&nbsp;
+          <a href="/terms/">Terms</a> &nbsp;·&nbsp;
+          <a href="mailto:hello@agniai.store">hello@agniai.store</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
