@@ -1,0 +1,25 @@
+---
+// Custom 404 — presence of dist/404.html switches Cloudflare Pages out of
+// SPA-fallback mode, so unknown URLs return a real HTTP 404 instead of a
+// soft-404 copy of the homepage.
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Page not found (404) | Agni AI Store"
+  description="That page doesn't exist on agniai.store. Head back to the homepage, browse industries, or book the free Growth Audit."
+>
+  <section class="ai-hero">
+    <p class="ai-eyebrow">404 — NOT FOUND</p>
+    <h1>That page doesn&rsquo;t exist.</h1>
+    <p class="ai-lead">The link may be outdated, or the page has moved. Nothing&rsquo;s broken on your end &mdash; here&rsquo;s where to go next.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
+      <a class="ai-btn" href="/">Back to homepage →</a>
+      <a class="ai-btn-ghost" href="/contact/">Book the free audit →</a>
+    </div>
+    <p style="margin-top:28px;color:var(--tx-soft);">
+      Or browse <a href="/industries/" style="color:var(--accent);">industries we serve</a>,
+      see <a href="/how-it-works/" style="color:var(--accent);">how it works</a>,
+      or read our <a href="/case-studies/" style="color:var(--accent);">case studies</a>.
+    </p>
+  </section>
+</BaseLayout>
