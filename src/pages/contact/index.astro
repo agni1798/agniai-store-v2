@@ -65,6 +65,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <span style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:var(--tx-soft);font-weight:600;">What's broken (2–3 sentences)</span>
             <textarea name="problem" rows="4" style="background:var(--bg0);border:1px solid var(--border-strong);color:var(--tx);font-size:15px;padding:11px 13px;border-radius:8px;font-family:inherit;resize:vertical;"></textarea>
           </label>
+          <!-- Honeypot: invisible to humans; /api/contact silently drops any submission that fills it -->
+          <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
           <input type="hidden" name="source" value="agniai.store-v2" />
           <button type="submit" class="ai-btn" style="margin-top:8px;">Send message →</button>
           <p id="contactStatus" style="font-size:13px;color:var(--tx-soft);margin:0;text-align:center;"></p>
