@@ -4,6 +4,10 @@ dist/
 
 # deps
 node_modules/
+# NOT committed on purpose: a committed lockfile makes Cloudflare Pages run `npm ci`,
+# which fails the build if the lock drifts from package.json. This exact issue broke
+# the shopagni-static deploy on 2026-07-22. Leave it untracked.
+package-lock.json
 
 # env / secrets
 .env
